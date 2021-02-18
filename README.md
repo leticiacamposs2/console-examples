@@ -97,3 +97,19 @@ console.error('mensagem de erro');
 saída
 
 ![error](./assets/erro.png)
+
+## console.table
+O método table() exibe qualquer dado do tipo array de array, array de objetos ou um objeto com objetos aninhados formatados em uma tabela.
+
+```javascript
+console.table([
+    { book: "Domain-Driven Design: Atacando as Complexidades no Coração do Software", author: "Martin Fowler" }, 
+    { book: "Arquitetura Limpa: O guia do artesão para estrutura e design de software", author: "Robert C. Martin" },
+    { book: "Por que os generalistas vencem em um mundo de especialistas", author: "David Epstein" }
+]);
+```
+
+saída
+
+![table](./assets/table.png)
+
