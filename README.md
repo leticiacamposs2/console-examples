@@ -52,16 +52,26 @@ O método log() existe essencialmente para permitir o envio de dados para o cons
 
 ```javascript
 console.log([
-    { name: "JavaScript", fileExtension: ".js" }, 
-    { name: "TypeScript", fileExtension: ".ts" }, 
-    { name: "Python", fileExtension: ".py" }
+    { book: "Domain-Driven Design: Atacando as Complexidades no Coração do Software", author: "Martin Fowler" }, 
+    { book: "Arquitetura Limpa: O guia do artesão para estrutura e design de software", author: "Robert C. Martin" },
+    { book: "Por que os generalistas vencem em um mundo de especialistas", author: "David Epstein" }
 ]);
 ```
 saída:
 ```javascript
-0: {name: "JavaScript", fileExtension: ".js"}
-1: {name: "TypeScript", fileExtension: ".ts"}
-2: {name: "Python", fileExtension: ".py"}
+(3) [{…}, {…}, {…}]
+0:
+author: "Martin Fowler"
+book: "Domain-Driven Design: Atacando as Complexidades no Coração do Software"
+__proto__: Object
+1:
+author: "Robert C. Martin"
+book: "Arquitetura Limpa: O guia do artesão para estrutura e design de software"
+__proto__: Object
+2:
+author: "David Epstein"
+book: "Por que os generalistas vencem em um mundo de especialistas"
+__proto__: Object
 length: 3
 __proto__: Array(0)
 ```
