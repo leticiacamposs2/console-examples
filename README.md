@@ -10,6 +10,8 @@ Neste artigo foi utilizado o navegador Chrome  😉.
 
 Para visualizar quais são os métodos possíveis do console, basta digitar `console.log(console)` no terminal e você terá um retorno parecido com esse:
 
+Para visualizar a lista de métodos possíveis do console, basta digitar `console.log(console)` no terminal e você terá o seguinte retorno:
+
 ```javascript
 console {debug: ƒ, error: ƒ, info: ƒ, log: ƒ, warn: ƒ, …}
 assert: ƒ assert()
@@ -42,6 +44,24 @@ set memory: ƒ ()
 __proto__: Object
 ```
 
-Este retorna a lista de métodos existente da API console, aqui neste artigo irei abordar os seguintes métodos: table, clear, warn, log, dir, error e info.
+Aqui neste artigo irei abordar somente os seguintes métodos: table, clear, warn, log, dir, error e info, mas fique a vontade para pesquisar e questionar sobre algum método que não foi abordado aqui mas que você ainda tem dúvidas.
 
+## console.log
 
+O método log() existe essencialmente para permitir o envio de dados para o console de depuração do navegador. Pode ser enviada qualquer informação, normalmente com o intuito de depurar código.
+
+```javascript
+console.log([
+    { name: "JavaScript", fileExtension: ".js" }, 
+    { name: "TypeScript", fileExtension: ".ts" }, 
+    { name: "Python", fileExtension: ".py" }
+]);
+```
+saída:
+```javascript
+0: {name: "JavaScript", fileExtension: ".js"}
+1: {name: "TypeScript", fileExtension: ".ts"}
+2: {name: "Python", fileExtension: ".py"}
+length: 3
+__proto__: Array(0)
+```
