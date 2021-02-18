@@ -44,7 +44,7 @@ set memory: ƒ ()
 __proto__: Object
 ```
 
-Aqui neste artigo irei abordar somente os seguintes métodos: table, clear, warn, log, dir, error e info, mas fique a vontade para pesquisar e questionar sobre algum método que não foi abordado aqui mas que você ainda tem dúvidas.
+Aqui neste artigo irei abordar somente os seguintes métodos:  table, clear, warn, log, dir, error e info, mas fique a vontade para pesquisar e questionar sobre algum método que não foi abordado aqui mas que você ainda tem dúvidas.
 
 ## console.log
 
@@ -75,3 +75,25 @@ __proto__: Object
 length: 3
 __proto__: Array(0)
 ```
+
+## console.warn
+
+O método warn() possui um comportamento parecido com o .log() em alguns navegadores ele inclui um ícone de warning a mensagem.
+
+```javascript
+console.warn('mensagem de warning');
+```
+saída
+
+![warn](./assets/warn.png)
+
+## console.error
+
+O método error() possui um comportamento parecido com o .log() em alguns navegadores ele inclui um ícone de erro a mensagem.
+
+```javascript
+console.error('mensagem de erro');
+```
+saída
+
+![error](./assets/erro.png)
