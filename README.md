@@ -85,7 +85,7 @@ console.warn('mensagem de warning');
 ```
 saída
 
-![warn](./assets/warn.png)
+![warn](./assets/warn.PNG)
 
 ## console.error
 
@@ -96,7 +96,7 @@ console.error('mensagem de erro');
 ```
 saída
 
-![error](./assets/erro.png)
+![error](./assets/erro.PNG)
 
 ## console.table
 O método table() exibe qualquer dado do tipo array de array, array de objetos ou um objeto com objetos aninhados formatados em uma tabela.
@@ -111,5 +111,5 @@ console.table([
 
 saída
 
-![table](./assets/table.png)
+![table](./assets/table.PNG)
 
