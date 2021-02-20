@@ -1,6 +1,5 @@
 # Indo além do console.log 
-Artigo no dev.to: https://dev.to/leticiacamposs2/indo-alem-do-console-log-386b
----
+#### Artigo no dev.to: https://dev.to/leticiacamposs2/indo-alem-do-console-log-386b
 
 Durante o desenvolvimento web é muito comum utilizar o método `console.log` para depurar um código JavaScript, mas você sabia que o `console` é um objeto? E é este objeto que fornece acesso ao console de debug do navegador. 
 
