@@ -8,7 +8,7 @@ De acordo com o portal  [developer.mozilla.org](developer.mozilla.org):
 
 > O funcionamento dessa console API varia de navegador para navegador.
 
-Neste artigo foi utilizado o navegador Chrome  😉.
+Nestes exemplos foi utilizado o navegador Chrome 😉.
 
 Para visualizar quais são os métodos possíveis do console, basta digitar `console.log(console)` no terminal e você terá um retorno parecido com esse:
 
@@ -44,9 +44,11 @@ set memory: ƒ ()
 __proto__: Object
 ```
 
-Aqui neste artigo irei abordar somente os seguintes métodos:
+## Métodos:
+
 - [log](#log)
-- [log-css](#log-css)
+- [log usando css](#log-css)
+- [assert](#assert)
 - [warn](#warn)
 - [error](#error)
 - [table](#table)
@@ -102,6 +104,33 @@ console.log("%c JavaScript é muito maneiro!", style);
 saída:
 
 ![saida-log-css](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/b8rp3whrh1nphl8sto47.png)
+
+## ✅ console.assert <a id="assert"></a>
+
+O método assert() emite uma mensagem e traça a sequência de operações até o primeiro argumento for falso, se a afirmação é verdadeira, nada acontece.
+
+```javascript
+const termosDeTecnologia = [
+    "rest",
+    "api",
+    "react",
+    "ux",
+    "poo",
+    "aws",
+    "array",
+    "backup",
+    "bigdata"
+];
+
+console.assert(termosDeTecnologia[0] === "rest", termosDeTecnologia); // nada acontece
+console.assert(termosDeTecnologia[0] !== "rest", termosDeTecnologia);
+```
+
+saída:
+
+```javascript
+Assertion failed: (9) ["rest", "api", "react", "ux", "poo", "aws", "array", "backup", "bigdata"]
+```
 
 ## ⚠️ console.warn <a id="warn"></a>
 
